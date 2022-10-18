@@ -1,2 +1,2 @@
-# percipio_home
-This plugin provides Percipio Home block to be added on the Moodle homepage
+# moodle-block-plugin
+The Skillsoft Percipio Home Page plugin was developed as an add-on to the Percipio Activity plugin. It allows learners to go directly to the Percipio platform without having to launch content. After the plugin is installed, learners can click the “button” to be automatically authenticated into Percipio and then directed to the home page.
