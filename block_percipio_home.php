@@ -18,6 +18,7 @@
  * Form for editing HTML block instances.
  *
  * @package   block_percipio_home
+ * @copyright  2022 Skillsoft Ireland Limited - All rights reserved.
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -25,34 +26,67 @@ defined('MOODLE_INTERNAL') || die();
 
 global $USER, $CFG, $DB, $OUTPUT;
 
+/**
+ * block_percipio_home external functions
+ *
+ * @package    block_percipio_home
+ * @category   external
+ * @copyright  2022 Skillsoft Ireland Limited - All rights reserved.
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class block_percipio_home extends block_base {
 
+
+    /**
+     * Init Function
+     *
+     */
     public function init() {
         $this->title = get_string('pluginname', 'block_percipio_home');
     }
-
+    /**
+     * Init Function
+     *
+     * @return true
+     */
     public function has_config() {
         return true;
     }
-
+    /**
+     * applicable_formats Function
+     *
+     * @return array true
+     */
     public function applicable_formats() {
         return array('all' => true);
     }
-
+    /**
+     * specialization Function
+     *
+     * @return string title
+     */
     public function specialization() {
         if (isset($this->config->title)) {
             $this->title = $this->title = format_string($this->config->title, true, ['context' => $this->context]);
         } else {
-            $this->title = get_string('percipio_home', 'block_percipio_home');
+            $this->title = '';
         }
     }
-
+    /**
+     * instance_allow_multiple Function
+     *
+     * @return true
+     */
     public function instance_allow_multiple() {
         return true;
     }
 
 
-
+    /**
+     * get_content Function
+     *
+     * @return content
+     */
     public function get_content() {
 
         global $CFG;
