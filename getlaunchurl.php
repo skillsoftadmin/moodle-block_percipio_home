@@ -18,7 +18,6 @@
  * Form for editing HTML block instances.
  *
  * @package   block_percipio_home
- * @copyright  2022 Skillsoft Ireland Limited - All rights reserved.
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 require(__DIR__.'/../../config.php');
