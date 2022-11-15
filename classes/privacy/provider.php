@@ -15,14 +15,32 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_percipiohome', language 'en', branch 'MOODLE_20_STABLE'
+ * Form for editing HTML block instances.
  *
  * @package   block_percipio_home
  * @copyright  2022 Skillsoft Ireland Limited - All rights reserved.
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['percipio_home:addinstance'] = 'Add a new percipio home';
-$string['percipio_home:myaddinstance'] = 'Add a new percipio home to dashboard';
-$string['pluginname'] = 'Percipio home';
-$string['privacy:metadata'] = 'The Percipio Home block only displays percipio button';
+namespace block_percipio_home\privacy;
+
+defined('MOODLE_INTERNAL') || die();
+
+/**
+ * Privacy Subsystem for block_percipio_home implementing null_provider.
+ *
+ * @copyright  2018 Zig Tan <zig@moodle.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class provider implements \core_privacy\local\metadata\null_provider {
+
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason() : string {
+        return 'privacy:metadata';
+    }
+}
