@@ -25,4 +25,4 @@
 $string['percipio_home:addinstance'] = 'Add a new percipio home';
 $string['percipio_home:myaddinstance'] = 'Add a new percipio home to dashboard';
 $string['pluginname'] = 'Percipio home';
-$string['privacy:metadata'] = 'The Percipio Home block only displays percipio button';
+$string['privacy:metadata'] = 'Percipio home block only displays percipio button';
