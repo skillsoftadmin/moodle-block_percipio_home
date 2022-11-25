@@ -24,7 +24,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2022101001;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version   = 2022101002;        // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires  = 2018120307;       // Requires this Moodle version.
 $plugin->component = 'block_percipio_home';  // Full name of the plugin (used for diagnostics).
 $plugin->dependencies = ['mod_percipio' => 2022022124];

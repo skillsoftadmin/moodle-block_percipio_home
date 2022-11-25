@@ -18,13 +18,11 @@
  * Strings for component 'block_percipiohome', language 'en', branch 'MOODLE_20_STABLE'
  *
  * @package   block_percipio_home
+ * @copyright  2022 Skillsoft Ireland Limited - All rights reserved.
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-
-$string['percipio_home:addinstance'] = 'Add a new Percipio Home';
-$string['percipio_home:myaddinstance'] = 'Add a new Percipio Home to Dashboard';
-$string['percipio_home'] = '';
-$string['pluginname'] = 'Percipio Home';
-
-
+$string['percipio_home:addinstance'] = 'Add a new percipio home';
+$string['percipio_home:myaddinstance'] = 'Add a new percipio home to dashboard';
+$string['pluginname'] = 'Percipio home';
+$string['privacy:metadata'] = 'Percipio home block only displays percipio button';
